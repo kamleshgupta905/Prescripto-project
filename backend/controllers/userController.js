@@ -9,7 +9,7 @@ import stripe from "stripe";
 import razorpay from 'razorpay';
 
 // Gateway Initialize
-const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY)
+const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
 const razorpayInstance = new razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET,
@@ -241,7 +241,8 @@ const paymentRazorpay = async (req, res) => {
 
         const { appointmentId } = req.body
         const appointmentData = await appointmentModel.findById(appointmentId)
-
+        // console.log("Payment request for appointmentId:", appointmentId);
+        //  console.log("Appointment Data:", appointmentData);
         if (!appointmentData || appointmentData.cancelled) {
             return res.json({ success: false, message: 'Appointment Cancelled or not found' })
         }
