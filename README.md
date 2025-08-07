@@ -25,7 +25,7 @@ Prescripto is a full-stack Doctor Appointment Booking Web Application that allow
 
 | User Dashboard | Admin Panel |
 |----------------|-------------|
-| ![User Dashboard](./Screenshot(5305).png) | ![Admin](https://via.placeholder.com/300x200?text=Admin+Dashboard) |
+| ![User Dashboard](./Screenshot (5305).png) | ![Admin](https://via.placeholder.com/300x200?text=Admin+Dashboard) |
 
 
 ---
